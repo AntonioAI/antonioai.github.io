@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Antonio's Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antonio's portfolio showcasing software development projects and skills including web development, programming, and creative problem-solving.">
+  <title>Antonio's Portfolio</title>
   <meta name="google-adsense-account" content="ca-pub-4772375115624530">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <h1>Welcome to My Projects</h1>
-  <ul>
-    <li><a href="/game-of-life-simulator">Game of Life Simulator</a></li>
-  </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Antonio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Software Developer & Creative Problem Solver</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <div class="card-image">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="card-content">
+            <h3>Game of Life Simulator</h3>
+            <p>An interactive implementation of Conway's Game of Life cellular automaton.</p>
+            <a href="/game-of-life-simulator" class="btn-small">View Project</a>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate software developer with expertise in creating elegant solutions to complex problems. I enjoy building interactive applications and exploring new technologies.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>email@example.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <p>github.com/antonioai</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Antonio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

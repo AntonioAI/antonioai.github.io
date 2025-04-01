@@ -266,6 +266,9 @@ header {
   transition: var(--transition);
   opacity: 0;
   transform: translateY(20px);
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .contact-item.revealed {
@@ -276,12 +279,23 @@ header {
 .contact-item:hover {
   transform: translateY(-5px);
   box-shadow: var(--box-shadow);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .contact-item i {
   font-size: 30px;
   margin-bottom: 15px;
   color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.contact-item:hover i {
+  color: white;
+}
+
+.contact-item span {
+  text-align: center;
 }
 
 /* Footer */

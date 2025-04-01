@@ -1,5 +1,8 @@
 // Wait for the DOM to load completely
 document.addEventListener('DOMContentLoaded', () => {
+  // Update copyright year
+  document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
   // Smooth scrolling for navigation links
   const navLinks = document.querySelectorAll('.nav-links a');
   

@@ -241,6 +241,30 @@ header {
   font-size: 18px;
 }
 
+/* Music Section */
+.music {
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.music h2 {
+  margin-bottom: 30px;
+}
+
+.spotify-embed {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.spotify-embed iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 /* Contact Section */
 .contact {
   text-align: center;

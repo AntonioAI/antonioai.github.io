@@ -273,30 +273,45 @@ header {
 
 .contact-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 50px;
-  margin-top: 40px;
   align-items: center;
+  gap: 30px;
+  margin-top: 40px;
   padding: 30px;
   background-color: var(--light-color);
   border-radius: 12px;
   box-shadow: var(--box-shadow);
+  flex-wrap: wrap;
 }
 
 .badge-base {
   margin: 0;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.badge-base iframe {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
 }
 
 .github-badge {
   margin: 0;
-  transform: scale(1.5);
+  transform: scale(1);
   padding: 12px 16px;
   background-color: var(--secondary-color);
   border-radius: 8px;
   box-shadow: var(--box-shadow);
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 330px;
 }
 
 .github-badge img {
@@ -307,7 +322,7 @@ header {
 }
 
 .github-badge:hover {
-  transform: scale(1.55);
+  transform: scale(1.05);
   background-color: var(--primary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -365,6 +380,15 @@ footer {
   section {
     padding: 60px 0;
   }
+
+  .badge-base {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -387,5 +411,15 @@ footer {
 
   .project-cards {
     grid-template-columns: 1fr;
+  }
+
+  .badge-base {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 30px;
   }
 } 
